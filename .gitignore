@@ -6,63 +6,62 @@ dist/
 .env
 .DS_Store
 Thumbs.db
+.vs/
 
 # =========================
 # .NET Backend
 # =========================
-# Build output
-bin/
-obj/
+Backend/bin/
+Backend/obj/
 
 # User-specific files
-*.user
-*.suo
-.vs/
-*.vscode/
+Backend/*.user
+Backend/*.suo
+Backend/.vs/
+Backend/.vscode/
 
 # Logs and temp files
-logs/
-*.log
-*.cache
-*.config
-*.bak
-*.tmp
+Backend/logs/
+Backend/*.log
+Backend/*.cache
+Backend/*.config
+Backend/*.bak
+Backend/*.tmp
 
 # Packages and dependencies
-packages/
-.nuget/
-project.lock.json
-*.nupkg
-*.snupkg
+Backend/packages/
+Backend/.nuget/
+Backend/project.lock.json
+Backend/*.nupkg
+Backend/*.snupkg
 
 # Entity Framework migrations
-Migrations/
+Backend/Migrations/
 
 # ASP.NET secrets
-appsettings.Development.json
+Backend/appsettings.Development.json
 
 # IIS & Rider files
-/.idea/
-.vscode/
+Backend/.idea/
+Backend/.vscode/
 
 # =========================
 # React Frontend
 # =========================
-# Dependencies
-frontend/node_modules/
-frontend/build/
+Frontend/node_modules/
+Frontend/build/
 
 # Environment variables
-frontend/.env
-frontend/.env.local
+Frontend/.env
+Frontend/.env.local
 
 # Cache & logs
-frontend/.next/
-frontend/.nuxt/
-frontend/.cache/
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
+Frontend/.next/
+Frontend/.nuxt/
+Frontend/.cache/
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
 
 # Editor-specific files
 *.swp
