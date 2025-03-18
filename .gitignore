@@ -6,19 +6,119 @@ dist/
 .env
 .DS_Store
 Thumbs.db
-.vs/
+Desktop.ini
+*~
+*.swp
+*.swo
+
+# =========================
+# OS-Specific
+# =========================
+# macOS
+*.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
 
 # =========================
 # .NET Backend
 # =========================
+# Build output
+bin/
+obj/
+publish/
+*.Publish.xml
+
+# User-specific files
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/  # Rider/JetBrains
+
+# Logs and temp files
+logs/
+*.log
+*.cache
+*.config
+*.bak
+*.tmp
+
+# Packages and dependencies
+packages/
+.nuget/packages/
+project.lock.json  # Obsolete, but included for legacy projects
+*.nupkg
+*.snupkg
+
+# Entity Framework migrations
+Migrations/
+
+# ASP.NET secrets
+appsettings.Development.json
+
+# IIS & Rider files
+/.idea/
+.vscode/
+
+# Resharper
+*.DotSettings.user
+
+# Local database files (if using SQLite)
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# =========================
+# React Frontend
+# =========================
+# Dependencies
+frontend/node_modules/
+frontend/build/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+
+# Cache & logs
+frontend/.next/
+frontend/.nuxt/
+frontend/.cache/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Vite (if used)
+frontend/.vite/
+frontend/vite.config.ts
+
+# Lint & formatting
+frontend/.eslintcache
+frontend/.prettier*
+
+# pnpm (if used)
+frontend/pnpm-lock.yaml
+frontend/.pnpm-store/
+
+# =========================
+# .NET Backend (if project is inside a "Backend" folder)
+# =========================
 Backend/bin/
 Backend/obj/
+Backend/publish/
+Backend/*.Publish.xml
 
 # User-specific files
 Backend/*.user
 Backend/*.suo
 Backend/.vs/
 Backend/.vscode/
+Backend/.idea/
 
 # Logs and temp files
 Backend/logs/
@@ -30,7 +130,7 @@ Backend/*.tmp
 
 # Packages and dependencies
 Backend/packages/
-Backend/.nuget/
+Backend/.nuget/packages/
 Backend/project.lock.json
 Backend/*.nupkg
 Backend/*.snupkg
@@ -45,8 +145,17 @@ Backend/appsettings.Development.json
 Backend/.idea/
 Backend/.vscode/
 
+# Resharper
+Backend/*.DotSettings.user
+
+# Local database files (if using SQLite)
+Backend/*.mdf
+Backend/*.ldf
+Backend/*.sqlite
+Backend/*.db
+
 # =========================
-# React Frontend
+# React Frontend (if project is inside a "Frontend" folder)
 # =========================
 Frontend/node_modules/
 Frontend/build/
@@ -63,7 +172,21 @@ Frontend/npm-debug.log*
 Frontend/yarn-debug.log*
 Frontend/yarn-error.log*
 
+# Vite (if used)
+Frontend/.vite/
+Frontend/vite.config.ts
+
+# Lint & formatting
+Frontend/.eslintcache
+Frontend/.prettier*
+
+# pnpm (if used)
+Frontend/pnpm-lock.yaml
+Frontend/.pnpm-store/
+
+# =========================
 # Editor-specific files
+# =========================
 *.swp
 *.swo
 *.sublime-workspace
