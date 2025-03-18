@@ -1,0 +1,57 @@
+.formContainer {
+  width: 100%;
+  max-width: 421px;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 16px;
+}
+
+.input {
+  border-radius: var(--sds-size-radius-200);
+  color: #ffffffe3;
+  background-color: #3a7065;
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
+
+.passwordInput {
+  border-radius: var(--sds-size-radius-200);
+  color: #fff6;
+  background-color: #3a7065;
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
+
+.submitButton {
+  color: #1e1e1e;
+  border-radius: var(--sds-size-radius-200);
+  background-color: #fff;
+  width: 100%;
+  padding: 0.75rem;
+  font-family: Inter, sans-serif;
+}
+
+.forgotPassword {
+  font-size: 16px;
+  text-decoration-line: underline;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
