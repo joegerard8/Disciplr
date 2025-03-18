@@ -1,42 +1,60 @@
-# React & TypeScript
-/node_modules/
-/build/
-/dist/
-/*.log
-/.env
-/.vscode/
-/.idea/
-/*.tsbuildinfo
-
-# C#/.NET
+# =========================
+# General Git Ignore
+# =========================
+node_modules/
+dist/
+.env
+.DS_Store
+Thumbs.db
+# =========================
+# .NET Backend
+# =========================
+# Build output
 bin/
-/obj/
-/.vs/
-/.vscode/
-
-# Windows-specific files
-Thumbs.db
-Desktop.ini
-
-# Mac-specific files
-.DS_Store
-
-# Npm/ Yarn
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Logs
+obj/
+# User-specific files
+*.user
+*.suo
+.vs/
+*.vscode/
+# Logs and temp files
+logs/
 *.log
-
-# IDE/Editor folders
-.vscode/
+*.cache
+*.config
+*.bak
+*.tmp
+# Packages and dependencies
+packages/
+.nuget/
+project.lock.json
+*.nupkg
+*.snupkg
+# Entity Framework migrations
+Migrations/
+# ASP.NET secrets
+appsettings.Development.json
+# IIS & Rider files
 /.idea/
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-#
-.sln
-Backend/Disciplr.sln
+.vscode/
+# =========================
+# React Frontend
+# =========================
+# Dependencies
+frontend/node_modules/
+frontend/build/
+# Environment variables
+frontend/.env
+frontend/.env.local
+# Cache & logs
+frontend/.next/
+frontend/.nuxt/
+frontend/.cache/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+# Editor-specific files
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
