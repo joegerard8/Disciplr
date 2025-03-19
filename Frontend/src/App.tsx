@@ -1,11 +1,24 @@
-import "./App.css";
-import LessonPage from "./components/LessonPage";
+import { useState } from 'react';
+import './App.css';
+import LoginPage from './components/login/LoginPage';
+import InputDesign from './components/HomePage/InputDesign'; // Import the component that should come next
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // Function to handle successful login
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
+  };
+
   return (
-    <div className="app-container">
-      <LessonPage />
-    </div>
+    <>
+      {!isLoggedIn ? (
+        <LoginPage onLoginSuccess={handleLoginSuccess} />
+      ) : (
+        <InputDesign />
+      )}
+    </>
   );
 }
 
