@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Disciplr.Backend.Models;
+using Disciplr.Backend.Data;
 
 namespace Disciplr.Backend.Data  
 {
