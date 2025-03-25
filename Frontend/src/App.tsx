@@ -1,12 +1,16 @@
-import { useState } from 'react';
-import './App.css';
-import LoginPage from './components/login/LoginPage';
-import InputDesign from './components/HomePage/InputDesign'; // Import the component that should come next
+import { useState, useEffect } from "react";
+import "./App.css";
+import LoginPage from "./components/login/LoginPage";
+import InputDesign from "./components/HomePage/InputDesign";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
-  // Function to handle successful login
+  useEffect(() => {
+    const authStatus = localStorage.getItem("isAuthenticated");
+    setIsLoggedIn(authStatus === "true");
+  }, []);
+
   const handleLoginSuccess = () => {
     setIsLoggedIn(true);
   };
