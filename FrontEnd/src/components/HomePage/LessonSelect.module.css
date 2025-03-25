@@ -1,0 +1,48 @@
+.lessonContainer {
+  border: 1px solid #000;
+  border-radius: 10px;
+  flex: 1;
+  padding: 20px;
+}
+
+.lessonTitle {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.lessonGrid {
+  gap: 15px;
+  display: flex;
+}
+
+.lessonCard {
+  color: #fff;
+  background-color: #93a67e;
+  border: none;
+  border-radius: 49px;
+  width: 187px;
+  height: 233px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  .lessonGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (width <= 640px) {
+  .lessonContainer {
+    padding: 10px;
+  }
+
+  .lessonCard {
+    width: 100%;
+  }
+}

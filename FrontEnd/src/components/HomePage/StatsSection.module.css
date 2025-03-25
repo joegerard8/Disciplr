@@ -1,0 +1,38 @@
+.statsContainer {
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 39px;
+  display: flex;
+}
+
+.statCard {
+  text-align: center;
+}
+
+.statTitle {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.statValue {
+  color: #93a67e;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.statCard:nth-child(2) .statValue {
+  font-size: 36px;
+  letter-spacing: -2px;
+}
+
+.statUnit {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (width <= 640px) {
+  .statsContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

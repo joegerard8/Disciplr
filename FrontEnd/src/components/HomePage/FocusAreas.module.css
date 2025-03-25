@@ -1,0 +1,55 @@
+.focusContainer {
+  border: 1px solid #000;
+  border-radius: 10px;
+  flex: 1;
+  padding: 20px;
+}
+
+.focusTitle {
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.chartContainer {
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.pieChart {
+  width: 215px;
+  height: 224px;
+}
+
+.legendContainer {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.legendItem {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.legendDot {
+  width: 34px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.legendLabel {
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+@media (width <= 640px) {
+  .focusContainer {
+    padding: 10px;
+  }
+}

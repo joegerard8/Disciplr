@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import LoginPage from './components/login/LoginPage';
+import LoginPage from '../disciplr/src/components/login/LoginPage';
 import InputDesign from './components/HomePage/InputDesign'; // Import the component that should come next
 
 function App() {
