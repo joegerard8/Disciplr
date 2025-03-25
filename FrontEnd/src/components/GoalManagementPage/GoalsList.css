@@ -1,0 +1,20 @@
+.goalsContainer {
+  border: 1px solid #000;
+  background-color: #3a7065;
+  border-radius: 10px;
+  flex: 1;
+  padding: 16px;
+}
+
+.sectionTitle {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.goalsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

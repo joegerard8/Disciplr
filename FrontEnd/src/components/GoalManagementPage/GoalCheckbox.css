@@ -1,0 +1,25 @@
+.goalItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.goalText {
+  color: #fff;
+  font-size: 11px;
+}
+
+.checkbox {
+  border: 2px solid #49454f;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox.completed {
+  background-color: #625b71;
+  border: none;
+}

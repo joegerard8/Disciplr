@@ -1,0 +1,53 @@
+.statusBar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.time {
+  color: #000;
+  font-size: 17px;
+  font-weight: 590;
+}
+
+.spacer {
+  width: 124px;
+  height: 10px;
+}
+
+.navigation {
+  border: 1px solid #000;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 4px;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 100px;
+}
+
+.pageHeading {
+  text-align: center;
+  color: #000;
+  flex: 1;
+  font-family: Roboto;
+  font-size: 22px;
+}
+
+.placeholder {
+  width: 48px;
+  height: 48px;
+}

@@ -1,0 +1,46 @@
+.container {
+  min-height: 100vh;
+  background-color: #d6eaff;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 16px 24px;
+}
+
+.pageTitle {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.goalsGrid {
+  display: flex;
+  gap: 16px;
+}
+
+@media (width <= 640px) {
+  .goalsGrid {
+    flex-direction: column;
+  }
+}
+
+.reminders {
+  border: 1px solid #000;
+  background-color: #3a7065;
+  border-radius: 10px;
+  flex: 1;
+  padding: 16px;
+}
+
+.reminderText {
+  color: #fff;
+  font-size: 11px;
+  margin-bottom: 24px;
+}
+
+.reminderText:last-child {
+  margin-bottom: 0;
+}
