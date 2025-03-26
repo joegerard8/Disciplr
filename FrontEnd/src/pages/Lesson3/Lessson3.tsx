@@ -1,4 +1,5 @@
-import CheckpointComponent from "../CheckpointComponent";
+import CheckpointComponent from "../../components/CheckpointComponent";
+import Sidebar from "../../components/Sidebar";
 
 export default function Lesson3() {
     // the questions and the answers are defined below, the first answer for each set of three is the correct answer. this is handled in the component,
@@ -7,8 +8,17 @@ export default function Lesson3() {
     const answers: Array<string> = [' Faith in Jesus Christ', 'Serving others', 'Reading scriptures', 'To be forgiven and become more like Christ', 
         'Because we will never make mistakes again', 'So we can avoid going to church', 'We receive the gift of the Holy Ghost',
         'We never have to repent again', 'We instantly become perfect'];
+    const sidebarItems: string[] = [
+        "1. What is the Gospel of Jesus Christ?",
+        "2. Faith in Jesus Christ",
+        "3. Repentance",
+        "4. Baptism and Receiving the Gift of the Holy Ghost",
+        "5. Enduring to the End"
+    ];
 
     return (
+        <>
+        <Sidebar items={sidebarItems}></Sidebar>
         <div className="lesson-content">
             <h2>What is the Gospel of Jesus Christ?</h2>
             <p>The gospel is the path God has provided for us to return to His presence and receive eternal life. 
@@ -38,5 +48,6 @@ export default function Lesson3() {
             </p>       
             <CheckpointComponent questions={questions} answers={answers}></CheckpointComponent> 
         </div>
+        </>
     );
 }

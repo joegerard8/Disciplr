@@ -5,7 +5,7 @@ import Header from "./Header";
 import GoalsSection from "./GoalsSection";
 import LessonSelect from "./LessonSelect";
 import FocusAreas from "./FocusAreas";
-import BottomNav from "../BottomNav";
+import BottomNav from "../../components/BottomNav";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
