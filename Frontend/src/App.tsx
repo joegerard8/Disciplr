@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import LoginPage from './components/login/LoginPage';
 import InputDesign from './components/HomePage/InputDesign'; // Import the component that should come next
+import Lesson3 from './components/Lesson3Page/Lessson3'; // Import the component that should come next
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -16,7 +17,8 @@ function App() {
       {!isLoggedIn ? (
         <LoginPage onLoginSuccess={handleLoginSuccess} />
       ) : (
-        <InputDesign />
+        <Lesson3 />
+        // <InputDesign />
       )}
     </>
   );
