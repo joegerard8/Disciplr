@@ -1,4 +1,4 @@
-import CheckpointComponent from "../CheckPointComponent";
+import CheckpointComponent from "../CheckpointComponent";
 
 export default function Lesson3() {
     // the questions and the answers are defined below, the first answer for each set of three is the correct answer. this is handled in the component,
