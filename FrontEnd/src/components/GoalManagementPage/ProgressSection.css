@@ -1,0 +1,85 @@
+.progressSection {
+  margin-top: 32px;
+}
+
+.sectionTitle {
+  color: #000;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.lessonProgress {
+  border: 1px solid #000;
+  padding: 16px 0;
+  margin-bottom: 24px;
+}
+
+.progressItem {
+  margin-bottom: 24px;
+}
+
+.progressItem:last-child {
+  margin-bottom: 0;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 20px;
+}
+
+.levelProgress {
+  border: 1px solid #000;
+  padding: 16px 0;
+}
+
+.levelTitle {
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.levelBar {
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 35px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.levelFill {
+  background-color: #3a7065;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.points {
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.statsSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.scriptureImage {
+  width: 163px;
+  height: 86px;
+  border-radius: 10px;
+}
+
+.statsText {
+  color: #000;
+  flex: 1;
+  font-size: 11px;
+}
