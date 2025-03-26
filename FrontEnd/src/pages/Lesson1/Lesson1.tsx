@@ -1,5 +1,24 @@
-const LessonContent = () => {
+import CheckpointComponent from "../../components/CheckpointComponent";
+import Sidebar from "../../components/Sidebar";
+
+export default function Lesson1() {
+    const questions: Array<string> = ['What happened after Jesus Christ and His apostles died?', 'Why did Joseph Smith pray in 1820', 'Who appeared to Joseph Smith in the First Vision?'];
+    const answers: Array<string> = ['The world became more peaceful', 'Some of Christ’s teachings were lost or changed', 'Everyone followed the same religion',
+      'He wanted to know which church to join', 'He was asking for good weather', 'He was writing a book',
+      'An angel', 'God the Father and Jesus Christ', 'Moses and Elijah'
+    ];
+    const sidebarItems: string[] = [
+      "1. Why Was a Restoration Needed?",
+      "2. Joseph Smith’s First Vision",
+      "3. The Coming Forth of the Book of Mormon",
+      "4. The Restoration of the Priesthood",
+      "5. Christ’s Church Today",
+      "6. What the Restoration Means for You"
+    ];
+
     return (
+      <>
+      <Sidebar items={sidebarItems} />
       <div className="lesson-content">
         <h2>Why Was a Restoration Needed?</h2>
         <p>
@@ -52,12 +71,10 @@ const LessonContent = () => {
          we can develop a personal relationship with Jesus Christ and follow His gospel in its fullness.
 
         </p>
-
-
-
+        <CheckpointComponent questions={questions} answers={answers}></CheckpointComponent>
       </div>
+      </>
     );
   };
-  
-  export default LessonContent;
+
   

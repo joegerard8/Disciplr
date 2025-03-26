@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -7,11 +6,9 @@ import {
   Navigate,
 } from "react-router-dom";
 import "./App.css";
-import LoginPage from "./components/login/LoginPage";
-import InputDesign from "./components/HomePage/InputDesign";
+import LoginPage from "./pages/login/LoginPage";
+import InputDesign from "./pages/HomePage/InputDesign";
 import Logout from "./components/logout"; // Create this component
-
-
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
