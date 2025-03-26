@@ -1,26 +1,65 @@
-import { useState } from 'react';
-import './App.css';
-import LoginPage from './components/login/LoginPage';
-import InputDesign from './components/HomePage/InputDesign'; // Import the component that should come next
-import Lesson3 from './components/Lesson3Page/Lessson3'; // Import the component that should come next
+
+import { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import "./App.css";
+import LoginPage from "./components/login/LoginPage";
+import InputDesign from "./components/HomePage/InputDesign";
+import Logout from "./components/logout"; // Create this component
+
+
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
-  // Function to handle successful login
+  useEffect(() => {
+    const authStatus = localStorage.getItem("isAuthenticated");
+    setIsLoggedIn(authStatus === "true");
+  }, []);
+
   const handleLoginSuccess = () => {
     setIsLoggedIn(true);
   };
 
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+  };
+
   return (
-    <>
-      {!isLoggedIn ? (
-        <LoginPage onLoginSuccess={handleLoginSuccess} />
-      ) : (
-        <Lesson3 />
-        // <InputDesign />
-      )}
-    </>
+
+    <Router>
+      <Routes>
+        <Route
+          path="/login"
+          element={
+            !isLoggedIn ? (
+              <LoginPage onLoginSuccess={handleLoginSuccess} />
+            ) : (
+              <Navigate to="/" />
+            )
+          }
+        />
+        <Route
+          path="/"
+          element={
+            isLoggedIn ? (
+              <>
+                <InputDesign />
+                <Logout onLogout={handleLogout} />
+              </>
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
+        />
+      </Routes>
+    </Router>
+
+   
   );
 }
 
