@@ -5,6 +5,9 @@ import Header from "./Header";
 import GoalsSection from "./GoalsSection";
 import LessonSelect from "./LessonSelect";
 import FocusAreas from "./FocusAreas";
+import BottomNav from "../BottomNav";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const InputDesign: React.FC = () => {
   return (
@@ -15,6 +18,9 @@ const InputDesign: React.FC = () => {
         <GoalsSection />
         <LessonSelect />
         <FocusAreas />
+      </div>
+      <div>
+        <BottomNav />
       </div>
     </main>
   );

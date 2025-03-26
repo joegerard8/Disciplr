@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -9,6 +10,8 @@ import "./App.css";
 import LoginPage from "./components/login/LoginPage";
 import InputDesign from "./components/HomePage/InputDesign";
 import Logout from "./components/logout"; // Create this component
+
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -27,6 +30,7 @@ function App() {
   };
 
   return (
+
     <Router>
       <Routes>
         <Route
@@ -54,6 +58,8 @@ function App() {
         />
       </Routes>
     </Router>
+
+   
   );
 }
 
