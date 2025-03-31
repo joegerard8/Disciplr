@@ -1,3 +1,4 @@
+import BottomNav from "../../components/BottomNav";
 import CheckpointComponent from "../../components/CheckpointComponent";
 import Sidebar from "../../components/Sidebar";
 
@@ -73,6 +74,7 @@ export default function Lesson1() {
         </p>
         <CheckpointComponent questions={questions} answers={answers}></CheckpointComponent>
       </div>
+      <BottomNav />
       </>
     );
   };
