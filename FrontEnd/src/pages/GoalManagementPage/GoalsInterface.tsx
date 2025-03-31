@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./GoalsInterface.css";
+import styles from "./GoalsInterface.module.css";
 import Header from "./Header";
 import GoalsList from "./GoalsList";
 import ProgressSection from "./ProgressSection";

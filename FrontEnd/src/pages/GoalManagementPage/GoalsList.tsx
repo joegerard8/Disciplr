@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import styles from "./GoalsList.css";
+import styles from "./GoalsList.module.css";
 import GoalCheckbox from "./GoalCheckbox";
 
 const GoalsList: React.FC = () => {

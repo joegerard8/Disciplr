@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./GoalCheckbox.css";
+import styles from "./GoalCheckbox.module.css";
 
 interface GoalCheckboxProps {
   text: string;
