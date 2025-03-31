@@ -1,32 +1,22 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import "./LogoutButton.css"; // Import the CSS file
 
 interface LogoutProps {
-  onLogout?: () => void;
+  onLogout: () => void;
 }
 
-export const Logout: React.FC<LogoutProps> = ({ onLogout }) => {
+const Logout: React.FC<LogoutProps> = ({ onLogout }) => {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    // Clear local storage
-    localStorage.removeItem('isAuthenticated');
-    localStorage.removeItem('user');
-
-    // Optional: Call any additional logout callback
-    if (onLogout) {
-      onLogout();
-    }
-
-    // Redirect to login page
-    navigate('/login');
+  const handleLogout = (e: React.MouseEvent) => {
+    e.preventDefault(); // Prevent Link from navigating before logout
+    onLogout(); // Call the onLogout function passed as a prop
+    console.log("Navigating to home page after logout");
+    navigate("/"); // Redirect after logout
   };
 
   return (
-    <button 
-      onClick={handleLogout}
-      className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
-    >
+    <button onClick={handleLogout} className="logout-button">
       Logout
     </button>
   );

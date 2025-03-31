@@ -1,31 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link
-import "../App.css"; // Ensure this file exists
+import { Link } from "react-router-dom";
+import Logout from "./Logout";
 
 const BottomNav: React.FC = () => {
+  // Define the handleLogout function
+  const handleLogout = () => {
+    console.log("Logging out...");
+    localStorage.removeItem("authToken"); // Clear any stored user data
+  };
+
   return (
     <nav className="bottom-nav">
-      <Link to="/homePage" className="nav-item">
-        {" "}
-        {/* Navigate to home */}
+      <Link to="/" className="nav-item">
         <i className="bi bi-house"></i>
         <span>Home</span>
       </Link>
-      <Link to="/search" className="nav-item">
+      <Link to="/GoalsInterface" className="nav-item">
         <i className="bi bi-search"></i>
-        <span>Search</span>
+        <span>Goals</span>
       </Link>
-      <Link to="/add" className="nav-item">
-        <i className="bi bi-plus-circle"></i>
-        <span>Add</span>
-      </Link>
-      <Link to="/alerts" className="nav-item">
-        <i className="bi bi-bell"></i>
-        <span>Alerts</span>
-      </Link>
-      <Link to="/profile" className="nav-item">
-        <i className="bi bi-person"></i>
-        <span>Profile</span>
+      <Link to="/LessonSelectionPage" className="nav-item">
+        <i className="bi bi-search"></i>
+        <span>Lessons</span>
       </Link>
     </nav>
   );

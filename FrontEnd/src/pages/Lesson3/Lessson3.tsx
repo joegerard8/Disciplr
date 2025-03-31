@@ -1,3 +1,4 @@
+import BottomNav from "../../components/BottomNav";
 import React, { useState } from "react";
 import CheckpointComponent from "../../components/CheckpointComponent";
 import Sidebar from "../../components/Sidebar";
@@ -35,6 +36,7 @@ export default function Lesson3() {
   ];
 
   return (
+    <>
     <div className="lesson-container">
       <button className="hamburger-button" onClick={toggleSidebar}>
         <span className="hamburger-icon">☰</span>
@@ -88,5 +90,7 @@ export default function Lesson3() {
         <div className="sidebar-overlay" onClick={toggleSidebar}></div>
       )}
     </div>
+    <BottomNav />
+    </>
   );
 }

@@ -1,0 +1,27 @@
+/* LogoutButton.css */
+
+/* Style for the logout button */
+.logout-button {
+  position: fixed;
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  padding: 5px 10px; /* Smaller padding for a smaller button */
+  background-color: white; /* White background */
+  color: #f44336; /* Red text color to match the original button */
+  border: 1px solid #f44336; /* Red border to match the original design */
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #f44336; /* Red background on hover */
+  color: white; /* White text on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.logout-button:focus {
+  outline: none; /* Remove default focus outline */
+}
