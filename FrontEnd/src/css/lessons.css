@@ -1,0 +1,294 @@
+.lesson-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.lesson-content {
+  flex: 1;
+  padding: 20px 40px;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.lesson-paragraph {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.lesson-container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.lesson-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.lesson-paragraph {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 18px;
+}
+
+/* Sidebar styles */
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-wrapper.open {
+  left: 0;
+}
+
+.sidebar {
+  padding: 20px 0;
+  padding-top: 100px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #5d867d;
+}
+
+.return-button {
+  display: block;
+  width: 90%;
+  margin: 10px auto 20px;
+  padding: 10px;
+  background-color: #4a7aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.return-button:hover {
+  background-color: #3a67e8;
+}
+
+/* Hamburger button */
+.hamburger-button {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  background-color: #4a7aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-icon {
+  font-size: 24px;
+}
+
+/* Overlay to close sidebar when clicking outside */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+/* Mobile-specific styles (430x932px) */
+@media screen and (max-width: 430px) {
+  .lesson-content {
+    padding: 15px;
+    padding-top: 60px; /* Make room for the hamburger button */
+    padding-left: 50px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .lesson-paragraph {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* Ensure content fills the screen without extra space */
+  .lesson-container {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+/* Checkpoint styles */
+.checkpoint-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border-left: 4px solid #0b6634;
+}
+
+.checkpoint {
+  width: 100%;
+}
+
+.checkpoint h3 {
+  color: #4a7aff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.checkpoint ol {
+  padding-left: 20px;
+}
+
+.checkpoint li {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.checkpoint ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.checkpoint ul li {
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.checkpoint label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkpoint input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+/* Mobile adjustments for checkpoint */
+@media screen and (max-width: 430px) {
+  .checkpoint-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+  
+  .checkpoint h3 {
+    font-size: 18px;
+  }
+  
+  .checkpoint ol {
+    padding-left: 15px;
+  }
+  
+  .checkpoint li {
+    font-size: 14px;
+  }
+
+ 
+}
+.checkpoint-list {
+  list-style-type: decimal; /* Use decimal numbering for questions */
+  padding-left: 10px; /* Remove default padding */
+}
+
+.question-item {
+  margin-bottom: 20px; /* Add space between questions */
+}
+
+.answer-list {
+  list-style-type: none; /* Remove bullet points from answer options */
+  padding-left: 0; /* Remove default padding */
+  margin-top: 10px; /* Add space between question and answers */
+}
+
+.answer-item {
+  margin-bottom: 8px; /* Add space between answer options */
+}
+
+.answer-label {
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Vertically align radio button and label text */
+  margin-left: 10px; /* add spacing between radio button and label text */
+}
+
+.answer-label input[type="radio"] {
+    margin-right: 8px; /* add spacing to the right of the radio button */
+}
