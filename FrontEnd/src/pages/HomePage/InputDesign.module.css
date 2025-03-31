@@ -1,13 +1,16 @@
 .container {
-  min-height: screen;
+  min-height: 100vh;
+  width: 100vw; /* Ensures full width */
   background-color: #93a67e;
   flex-direction: column;
   display: flex;
+  align-items: center;
 }
 
 .header {
   background-color: #d6eaff;
   height: 299px;
+  width: 100%; /* Ensure full width */
   position: relative;
 }
 
@@ -15,6 +18,7 @@
   flex-direction: column;
   align-items: center;
   display: flex;
+  width: 100%;
 }
 
 .statusBar {
@@ -44,6 +48,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 100%;
 }
 
 .greeting {
@@ -54,18 +59,20 @@
   font-weight: 700;
   position: absolute;
   top: 102px;
-  left: 105px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .statsSection {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px;
   display: flex;
   position: absolute;
   top: 192px;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .statContainer {
@@ -119,6 +126,9 @@
   gap: 24px;
   padding: 24px;
   display: flex;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .sectionContainer {
@@ -142,6 +152,7 @@
   gap: 16px;
   padding: 16px;
   display: flex;
+  width: 100%;
 }
 
 .goalItem {
@@ -187,12 +198,14 @@
   border-color: #fff;
   border-radius: 10px;
   padding: 16px;
+  width: 100%;
 }
 
 .lessonCarousel {
   gap: 8px;
   display: flex;
   overflow-x: auto;
+  width: 100%;
 }
 
 .lessonTitle {
@@ -208,6 +221,7 @@
   gap: 24px;
   padding: 16px;
   display: flex;
+  width: 100%;
 }
 
 .focusItems {
@@ -227,4 +241,13 @@
   font-family: Inter, sans-serif;
   font-size: 10px;
   font-weight: 700;
+}
+.goalLink {
+  color: inherit; /* Inherit color from the parent to match the existing text color */
+  text-decoration: none; /* Remove the default underline */
+  font-weight: bold; /* Optional, to maintain the bold effect */
+}
+
+.goalLink:hover {
+  text-decoration: underline; /* Underline on hover to indicate it's clickable */
 }
