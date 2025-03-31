@@ -34,7 +34,10 @@ const GoalsSection: React.FC<GoalsSectionProps> = ({ goals }) => {
     <section className={styles.sectionContainer}>
       <h2 className={styles.sectionTitle}>
         {/* Link the "Goals" text to the GoalManagementPage */}
-        <Link to="/goalManagement" className={styles.goalLink}>
+        <Link
+          to="./pages/GoalManagementPage/GoalManagement"
+          className={styles.goalLink}
+        >
           Goals
         </Link>
       </h2>
