@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using Disciplr.Backend.Data; // Ensure this namespace is included
+using Disciplr.Backend.Data;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,15 +11,26 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowAllOrigins",
         policy => policy.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 });
 
 builder.Services.AddControllers();
 
+// 🔹 ADD SWAGGER SERVICES (THIS FIXES YOUR ERROR)
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
 app.UseCors("AllowAllOrigins");
-app.MapControllers();
 
+// 🔹 ENABLE SWAGGER UI
+if (app.Environment.IsDevelopment()) 
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.MapControllers();
 app.Run();

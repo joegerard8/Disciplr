@@ -1,29 +1,32 @@
 import React from "react";
-import "../App.css"; // Make sure this file exists
+import { Link } from "react-router-dom"; // Import Link
+import "../App.css"; // Ensure this file exists
 
 const BottomNav: React.FC = () => {
   return (
     <nav className="bottom-nav">
-      <a href="#" className="nav-item">
+      <Link to="/homePage" className="nav-item">
+        {" "}
+        {/* Navigate to home */}
         <i className="bi bi-house"></i>
         <span>Home</span>
-      </a>
-      <a href="#" className="nav-item">
+      </Link>
+      <Link to="/search" className="nav-item">
         <i className="bi bi-search"></i>
         <span>Search</span>
-      </a>
-      <a href="#" className="nav-item">
+      </Link>
+      <Link to="/add" className="nav-item">
         <i className="bi bi-plus-circle"></i>
         <span>Add</span>
-      </a>
-      <a href="#" className="nav-item">
+      </Link>
+      <Link to="/alerts" className="nav-item">
         <i className="bi bi-bell"></i>
         <span>Alerts</span>
-      </a>
-      <a href="#" className="nav-item">
+      </Link>
+      <Link to="/profile" className="nav-item">
         <i className="bi bi-person"></i>
         <span>Profile</span>
-      </a>
+      </Link>
     </nav>
   );
 };
