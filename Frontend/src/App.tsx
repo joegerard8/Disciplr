@@ -11,6 +11,7 @@ import InputDesign from "./pages/HomePage/InputDesign";
 import Logout from "./components/Logout"; // Create this component
 import Lesson1 from "./pages/Lesson1/Lesson1";
 import Lesson3 from "./pages/Lesson3/Lessson3";
+import GoalsInterface from "./pages/GoalManagementPage/GoalsInterface";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -58,6 +59,7 @@ function App() {
         <Route path="/homePage" element={<InputDesign />}></Route>
         <Route path="/lesson1" element={<Lesson1 />} />
         <Route path="/lesson3" element={<Lesson3 />} />
+        {/* <Route path="/goalmanagement" element={<GoalsInterface />} /> */}
       </Routes>
     </Router>
   );

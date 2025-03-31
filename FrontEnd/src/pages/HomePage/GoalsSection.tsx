@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import styles from "./InputDesign.module.css";
 
 interface GoalItemProps {
@@ -24,14 +25,27 @@ const GoalItem: React.FC<GoalItemProps> = ({ text, progress }) => {
   );
 };
 
-const GoalsSection: React.FC = () => {
+interface GoalsSectionProps {
+  goals: { goalName: string; goalProgress: number }[];
+}
+
+const GoalsSection: React.FC<GoalsSectionProps> = ({ goals }) => {
   return (
     <section className={styles.sectionContainer}>
-      <h2 className={styles.sectionTitle}>Goals</h2>
+      <h2 className={styles.sectionTitle}>
+        {/* Link the "Goals" text to the GoalManagementPage */}
+        <Link to="/goalManagement" className={styles.goalLink}>
+          Goals
+        </Link>
+      </h2>
       <div className={styles.goalsContainer}>
-        <GoalItem text="Read First Nephi" progress={60} />
-        <GoalItem text="Pray Everyday For 2 Weeks" progress={85} />
-        <GoalItem text="Complete 7 Lessons" progress={30} />
+        {goals.map((goal, index) => (
+          <GoalItem
+            key={index}
+            text={goal.goalName}
+            progress={goal.goalProgress * 100}
+          />
+        ))}
       </div>
     </section>
   );
