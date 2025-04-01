@@ -4,6 +4,7 @@ import styles from "./GoalsCss/GoalsInterface.module.css";
 import Header from "./Header";
 import GoalsList from "./GoalsList";
 import ProgressSection from "./ProgressSection";
+import BottomNav from "../../components/BottomNav";
 
 const GoalManagement: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const GoalManagement: React.FC = () => {
         </div>
         <ProgressSection />
       </section>
+      <BottomNav />
     </main>
   );
 };

@@ -12,7 +12,7 @@ const LinksPage: React.FC = () => {
           <Link to="/lesson1">Go to Lesson 1</Link>
         </li>
         <li>
-          <Link to="/lesson2">Go to Lesson 2 (Change to 2 when done)</Link>
+          <Link to="/lesson2">Go to Lesson 2</Link>
         </li>
         <li>
           <Link to="/lesson3">Go to Lesson 3</Link>
