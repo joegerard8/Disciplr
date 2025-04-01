@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ProgressSection.module.css";
+import styles from "./GoalsCss/ProgressSection.module.css";
 import ProgressBar from "./ProgressBar";
 
 const ProgressSection: React.FC = () => {

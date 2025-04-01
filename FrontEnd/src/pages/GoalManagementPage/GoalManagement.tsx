@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import styles from "./GoalsInterface.module.css";
+import styles from "./GoalsCss/GoalsInterface.module.css";
 import Header from "./Header";
 import GoalsList from "./GoalsList";
 import ProgressSection from "./ProgressSection";
 
-const GoalsInterface: React.FC = () => {
+const GoalManagement: React.FC = () => {
   return (
     <main className={styles.container}>
       <Header />
@@ -31,4 +31,4 @@ const GoalsInterface: React.FC = () => {
   );
 };
 
-export default GoalsInterface;
+export default GoalManagement;
