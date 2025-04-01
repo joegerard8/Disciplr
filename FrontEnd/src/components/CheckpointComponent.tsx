@@ -9,7 +9,10 @@ interface CheckpointProps {
 export default function CheckpointComponent({ questions, answers }: CheckpointProps) {
   return (
     <>
-      <h3>Checkpoint!</h3>
+      <h2 className="h4 fw-bold">
+        ✅ Checkpoint! 
+      </h2>
+
       <ol className="checkpoint-list">
         {questions.map((question, index) => (
           <li key={index} className="question-item">

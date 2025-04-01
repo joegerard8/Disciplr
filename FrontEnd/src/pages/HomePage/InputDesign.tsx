@@ -45,15 +45,18 @@ const InputDesign: React.FC = () => {
     <main className={styles.container}>
       {userData && (
         <>
-          <Header user={userData} />
-          <div className={styles.mainContent}>
-            <GoalsSection goals={userData.goals} />
-            <LessonSelect />
-            <FocusAreas />
-          </div>
-          <div>
-            <BottomNav />
-          </div>
+        <Header user={userData} />
+<div className="container">
+  <div className="mainContent">
+    <GoalsSection goals={userData.goals} />
+    <LessonSelect />
+    <FocusAreas />
+  </div>
+</div>
+<div className="fixed-bottom">
+  <BottomNav />
+</div>
+
         </>
       )}
     </main>
