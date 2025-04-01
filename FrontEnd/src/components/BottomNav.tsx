@@ -15,7 +15,7 @@ const BottomNav: React.FC = () => {
         <i className="bi bi-house"></i>
         <span>Home</span>
       </Link>
-      <Link to="/GoalsInterface" className="nav-item">
+      <Link to="/GoalManagement" className="nav-item">
         <i className="bi bi-search"></i>
         <span>Goals</span>
       </Link>
