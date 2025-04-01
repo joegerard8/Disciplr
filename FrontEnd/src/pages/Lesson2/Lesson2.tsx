@@ -52,7 +52,7 @@ export default function Lesson2() {
                     <Sidebar items={sidebarItems} />
                 </div>
 
-                <div className="lesson-content">
+                <div className="lesson-content" style={{ paddingLeft: "50px" }}>
                     <h2>Prayer: Communicating with Our Heavenly Father</h2>
 
                     <h3>The Value of Prayer</h3>

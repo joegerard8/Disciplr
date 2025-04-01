@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
 type SidebarProps = {
-  items: string[];
+  items: { label: string; anchor: string }[];
 };
 
 const Sidebar: React.FC<SidebarProps> = ({ items }) => {
@@ -20,7 +20,9 @@ const Sidebar: React.FC<SidebarProps> = ({ items }) => {
       </button>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            <a href={`#${item.anchor}`} className="sidebar-link">{item.label}</a>
+          </li>
         ))}
       </ul>
     </div>

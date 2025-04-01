@@ -46,7 +46,7 @@ export default function Lesson3() {
         <Sidebar items={sidebarItems} />
       </div>
 
-      <div className="lesson-content">
+      <div className="lesson-content" style={{ paddingLeft: "50px" }}>
         <h2>What is the Gospel of Jesus Christ?</h2>
         <div className="lesson-paragraph">
           The gospel is the path God has provided for us to return to His
