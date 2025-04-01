@@ -5,21 +5,23 @@ import "./LinkSelectionPage.css"; // Import the CSS file
 
 const LinksPage: React.FC = () => {
   return (
+    <>
     <div className="links-page">
-      <h1>Welcome to the Lessons</h1>
+      <h1>Select a lesson to start learning!</h1>
       <ul>
         <li>
-          <Link to="/lesson1">Go to Lesson 1</Link>
+          <Link to="/lesson1">Lesson 1</Link>
         </li>
         <li>
-          <Link to="/lesson2">Go to Lesson 2</Link>
+          <Link to="/lesson2">Lesson 2</Link>
         </li>
         <li>
-          <Link to="/lesson3">Go to Lesson 3</Link>
+          <Link to="/lesson3">Lesson 3</Link>
         </li>
       </ul>
-      <BottomNav />
     </div>
+    <BottomNav />
+    </>
   );
 };
 
