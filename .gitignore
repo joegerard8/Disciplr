@@ -191,3 +191,5 @@ Frontend/.pnpm-store/
 *.swo
 *.sublime-workspace
 *.sublime-project
+/Backend/disciplr.db-shm
+/Backend/disciplr.db-wal
