@@ -1,7 +1,7 @@
 import React from "react";
 
 type SidebarProps = {
-  items: string[];
+  items: { label: string; anchor: string }[];
 };
 
 const Sidebar: React.FC<SidebarProps> = ({ items }) => {
@@ -10,7 +10,9 @@ const Sidebar: React.FC<SidebarProps> = ({ items }) => {
       <button className="return-button">Return To Menu</button>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            <a href={`#${item.anchor}`} className="sidebar-link">{item.label}</a>
+          </li>
         ))}
       </ul>
     </div>
@@ -18,5 +20,6 @@ const Sidebar: React.FC<SidebarProps> = ({ items }) => {
 };
 
 export default Sidebar;
+
 
   

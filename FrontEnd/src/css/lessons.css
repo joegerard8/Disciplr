@@ -292,3 +292,31 @@ h3 {
 .answer-label input[type="radio"] {
     margin-right: 8px; /* add spacing to the right of the radio button */
 }
+
+/* Shift content when sidebar is open */
+.lesson-container.sidebar-open .lesson-content {
+  margin-left: 250px; /* same as sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+/* Smooth transition for content */
+.lesson-content {
+  transition: margin-left 0.3s ease;
+}
+
+/* Optional: prevent overlap on mobile screens */
+@media screen and (max-width: 768px) {
+  .sidebar-wrapper {
+    position: absolute;
+    z-index: 1002;
+  }
+
+  .lesson-container.sidebar-open .lesson-content {
+    margin-left: 0;
+  }
+}
+.lesson-container.sidebar-open .lesson-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
