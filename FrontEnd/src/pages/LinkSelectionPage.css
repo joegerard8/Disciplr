@@ -1,301 +1,95 @@
-/* LinkSelectionPage.css */
+/* Keep navbar styling untouched */
+.bottom-nav {
+  background-color: #333 !important;
+  color: white !important;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-/* General container styling */
-.container {
-    min-height: 100vh;
-    background-color: #93a67e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Full-page container */
+.links-page {
+  min-height: 100vh;
+  background-color: #93a67e; /* Greenish background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* Centered Header Banner */
+.header-banner {
+  background-color: #d6eaff; /* Light blue */
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px; /* Keeps it neat */
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centering the list */
+.lesson-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center;
+  width: 100%;
+}
+
+/* Lesson Item Box */
+.lesson-item {
+  background-color: #d6eaff; /* Light blue */
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.lesson-item:hover {
+  background-color: #93a67e; /* Green hover */
+  color: white;
+  transform: scale(1.08);
+}
+
+.lesson-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .header-banner {
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 15px;
   }
-  
-  /* Header styling */
-  .header {
-    background-color: #d6eaff;
-    height: 299px;
-    position: relative;
-    width: 100%;
+
+  .lesson-item {
+    width: 90%;
+    font-size: 1.1rem;
   }
-  
-  .headerContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .statusBar {
-    background-color: transparent;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 8px;
-    display: flex;
-  }
-  
-  /* Time styling */
-  .time {
-    color: #000;
-    padding: 0 6px 0 16px;
-    font-size: 17px;
-    font-weight: 590;
-  }
-  
-  /* Status Icons styling */
-  .statusIcons {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    padding: 0 16px 0 6px;
-  }
-  
-  /* Greeting message */
-  .greeting {
-    color: #000;
-    text-align: center;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    position: absolute;
-    top: 102px;
-    left: 105px;
-  }
-  
-  /* Stats Section styling */
-  .statsSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-left: 24px;
-    padding-right: 24px;
-    position: absolute;
-    top: 192px;
-  }
-  
-  /* Stat Containers styling */
-  .statContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .statLabel {
-    color: #000;
-    font-family: Inter, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-  }
-  
-  .streakValue {
-    color: #93a67e;
-    font-family: Inter, sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 22px;
-  }
-  
-  .statUnit {
-    color: #000;
-    font-family: Inter, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-  }
-  
-  /* Resume button styling */
-  .resumeButton {
-    color: #fff;
-    background-color: #93a67e;
-    border-radius: 49px;
-    padding: 7px 19px;
-    font-family: Inter, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-  }
-  
-  /* Progress Value styling */
-  .progressValue {
-    color: #93a67e;
-    font-family: Inter, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 22px;
-  }
-  
-  /* Main content area styling */
-  .mainContent {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 24px;
-  }
-  
-  .sectionContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .sectionTitle {
-    color: #fff;
-    font-family: Inter, sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-  }
-  
-  /* Goals Container styling */
-  .goalsContainer {
-    border-width: 1px;
-    border-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-  }
-  
-  /* Goal Item styling */
-  .goalItem {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .goalText {
-    color: #fff;
-    font-family: Roboto, sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-  }
-  
-  /* Progress Bar styling */
-  .progressBar {
-    background-color: #f8f8f8;
-    border-radius: 100px;
-    width: 100%;
-    height: 4px;
-  }
-  
-  .progressFill {
-    background-color: #090909;
-    border-radius: 100px;
-    height: 100%;
-  }
-  
-  .progressFill60 {
-    width: 60%;
-  }
-  
-  .progressFill85 {
-    width: 85%;
-  }
-  
-  .progressFill30 {
-    width: 30%;
-  }
-  
-  /* Lesson Container styling */
-  .lessonContainer {
-    border-width: 1px;
-    border-color: #fff;
-    border-radius: 10px;
-    padding: 16px;
-  }
-  
-  /* Lesson Carousel styling */
-  .lessonCarousel {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-  }
-  
-  .lessonTitle {
-    color: #fff;
-    flex: 1;
-  }
-  
-  /* Focus Container styling */
-  .focusContainer {
-    border-width: 1px;
-    border-color: #fff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 16px;
-  }
-  
-  .focusItems {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .focusItem {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .focusText {
-    color: #fff;
-    font-family: Inter, sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-  }
-  
-  /* Additional styles for links and layout of the LinksPage */
-  .links-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 24px;
-  }
-  
-  .links-page h1 {
-    color: #333;
-    font-size: 2rem;
-    text-align: center;
-  }
-  
-  .links-page ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .links-page li {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .links-page a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 24px;
-    background-color: #aec3ae;
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .links-page a:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-  }
-  
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
+}
