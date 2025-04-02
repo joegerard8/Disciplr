@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
   return (
     <div className={styles.header}>
       <div className={styles.headerContent}>
-        <StatusBar />
+        {/* <StatusBar /> */}
 
         <div className={styles.imageContainer}>
           <img
