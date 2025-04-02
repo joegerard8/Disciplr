@@ -1,0 +1,115 @@
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #93a67e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding-bottom: 80px; /* Add padding to account for bottom nav */
+}
+
+.fixedBottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.header {
+    background-color: #d6eaff;
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px; /* Add padding to the top of the header */
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.userImage {
+    width: 136px;
+    height: 133px;
+}
+
+.greeting {
+    color: #000;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.statsSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Add align-items center */
+    width: 100%;
+    max-width: 430px;
+    margin-top: 20px;
+}
+
+.statContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statLabel {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.streakValue {
+    color: #93a67e;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* iPhone 14 Pro Max adjustments */
+@media (max-width: 430px) {
+    .header {
+        height: 400px;
+    }
+
+    .greeting {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .statsSection {
+        margin-top: 15px;
+    }
+}
