@@ -18,12 +18,14 @@
 }
 
 .navigation {
-  border: 1px solid #000;
+  border-bottom: 3px solid #f0f0f0;
+  border-top: 3px solid #f0f0f0;
   background-color: transparent;
   display: flex;
   align-items: center;
   gap: 6px;
   padding: 8px 4px;
+  margin-top: 20px;
 }
 
 .menuButton {
@@ -41,9 +43,11 @@
 
 .pageHeading {
   text-align: center;
-  color: #000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   flex: 1;
-  font-family: Roboto;
+  padding-top: 7px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
 }
 

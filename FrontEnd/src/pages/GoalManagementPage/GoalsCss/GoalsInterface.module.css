@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
   width: 100vw;
-  background-color: #d6eaff;
+  background-color: #3a7065;
   display: flex;
   flex-direction: column;
 }
@@ -11,10 +11,24 @@
 }
 
 .pageTitle {
-  color: #000;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
+}
+
+.pageTitle2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.pageTitle3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0px;
 }
 
 .goalsGrid {
@@ -29,11 +43,10 @@
 }
 
 .reminders {
-  border: 1px solid #000;
-  background-color: #3a7065;
+  background-color: #d4a373;
   border-radius: 10px;
   flex: 1;
-  padding: 16px;
+  padding-top: 15px;
 }
 
 .reminderText {
