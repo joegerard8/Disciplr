@@ -29,7 +29,7 @@ export default function CheckpointComponent({ questions, answers }: CheckpointPr
   };
 
   return (
-    <>
+    <div className="pb-5">
       <h2 className="h4 fw-bold">
         ✅ Checkpoint! 
       </h2>
@@ -91,6 +91,6 @@ export default function CheckpointComponent({ questions, answers }: CheckpointPr
           Retry Quiz
         </button>
       )}
-    </>
+    </div>
   );
 }
