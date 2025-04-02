@@ -18,8 +18,8 @@
 }
 
 .navigation {
-  border-bottom: 3px solid #f0f0f0;
-  border-top: 3px solid #f0f0f0;
+  border-bottom: 3px solid #000000;
+  border-top: 3px solid #000000;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@
 
 .pageHeading {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   font-family: Arial, sans-serif;
   flex: 1;
   padding-top: 7px;

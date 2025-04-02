@@ -15,7 +15,7 @@
   border-radius: 12px;
   padding: 24px;
   margin-bottom: 24px;
-  background-color: #d4a373;
+  background-color: #93a67e;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -116,7 +116,7 @@
 
 
 .pageTitle3 {
-  color: #ffffff;
+  color: rgb(0, 0, 0);
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;

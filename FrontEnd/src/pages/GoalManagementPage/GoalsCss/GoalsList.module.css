@@ -1,6 +1,6 @@
 .goalsContainer {
   border: none;
-  background-color: #d4a373;
+  background-color: #93a67e;
   border-radius: 16px;
   flex: 1;
   padding: 24px;
@@ -97,8 +97,8 @@
 }
 
 :global(.checkboxInput:checked) {
-  background-color: #d4a373;
-  border-color: #d4a373;
+  background-color: #93a67e;
+  border-color: #93a67e;
 }
 
 :global(.checkboxInput:checked::after) {
