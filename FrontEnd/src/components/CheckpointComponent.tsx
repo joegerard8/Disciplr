@@ -29,7 +29,7 @@ export default function CheckpointComponent({ questions, answers }: CheckpointPr
   };
 
   return (
-    <>
+    <div className="pb-5">
       <h2 className="h4 fw-bold">
         ✅ Checkpoint! 
       </h2>
@@ -83,14 +83,14 @@ export default function CheckpointComponent({ questions, answers }: CheckpointPr
       </ol>
 
       {!submitted ? (
-        <button onClick={handleSubmit} className="submit-button">
+        <button onClick={handleSubmit} className="submit-button btn btn-success">
           Submit Answers
         </button>
       ) : (
-        <button onClick={handleRetry} className="submit-button">
+        <button onClick={handleRetry} className="submit-button btn btn-primary">
           Retry Quiz
         </button>
       )}
-    </>
+    </div>
   );
 }

@@ -13,6 +13,7 @@ const Header: React.FC<HeaderProps> = ({ user }) => {
   return (
     <div className={styles.header}>
       <div className={styles.headerContent}>
+        {/* <StatusBar /> */}
         <div className={styles.imageContainer}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc948f29ff25deb5cdef020b5551765edc262eff"
